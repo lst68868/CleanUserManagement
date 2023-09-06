@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanUserManagement.Domain\CleanUserManagement.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Interfaces\" />
+    <None Remove="Features\" />
+    <None Remove="Features\Users\" />
+    <None Remove="Features\Users\Queries\" />
+    <None Remove="Features\Users\Mutations\" />
+    <None Remove="Features\Users\Mutations\CreateUser\" />
+    <None Remove="Features\Users\Queries\GetAllUsers\" />
+    <None Remove="Features\Users\Queries\GetUser\" />
+    <None Remove="Features\Users\Mutations\UpdateUser\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Features\" />
+    <Folder Include="Features\Users\" />
+    <Folder Include="Features\Users\Queries\" />
+    <Folder Include="Features\Users\Mutations\" />
+    <Folder Include="Features\Users\Mutations\CreateUser\" />
+    <Folder Include="Features\Users\Queries\GetAllUsers\" />
+    <Folder Include="Features\Users\Queries\GetUser\" />
+    <Folder Include="Features\Users\Mutations\UpdateUser\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.7.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
+    <PackageReference Include="MediatR" Version="11.1.0" />
+  </ItemGroup>
+</Project>
